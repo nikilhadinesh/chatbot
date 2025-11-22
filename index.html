@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="images\weblogo.png" type="image/x-icon">
+    <title>Qubix</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded&display=swap" />
+    <link rel="stylesheet" href="style.css"> <!-- Ensure this path is correct -->
+</head>
+
+<body>
+    <div class="container">
+         <!--Home Wallpaper-->
+          <div class="home-wallpaper">
+            <img src="images\wallpaper.jpg" alt="Home Wallpaper" class="wallpaper-image">
+        </div>
+         
+        <!--App Header-->
+        <header class="app-header">
+            <div class="header-row">
+            <h1 class="heading">Hello, there</h1>
+            <div class="logo-container">
+                 <img src="images\iconlogo.png" alt="Qubix Logo" class="logo" />
+                 <span class="logo-text">ubix</span>
+            </div>
+            </div>
+            <h2 class="sub-heading">How can I help you</h2>
+        </header>
+
+        <!--Suggestion list-->
+        <ul class="suggestions">
+            <li class="suggestions-item">
+                <p class="text">Draw the architecture of a compiler.</p>
+                <span class="material-symbols-rounded">draw</span>
+            </li>
+            <li class="suggestions-item">
+                <p class="text">How can I level up my web development expertise in 2025?</p>
+                <span class="material-symbols-rounded">lightbulb</span>
+            </li>
+            <li class="suggestions-item">
+                <p class="text">Explain multithreading in simple terms.</p>
+                <span class="material-symbols-rounded">explore</span>
+            </li>
+            <li class="suggestions-item">
+                <p class="text">Fix and Debug your codes with free.</p>
+                <span class="material-symbols-rounded">code_blocks</span>
+            </li>
+        </ul>
+
+       
+        
+        <!--Chats container-->
+        <div class="chats-container">
+        </div>
+
+        <!--Prompt container-->
+        <div class="prompt-container">
+            <div class="prompt-wrapper">
+                <button class="material-symbols-rounded" id="home-btn">home</button>
+                <form action="#" class="prompt-form">
+                    <input type="text" placeholder="Tap for Qubixchat" class="prompt-input" required>
+                    <div class="prompt-actions">
+                        <!--File upload Wrapper-->
+                        <div class="file-upload-wrapper">
+                            <img src="#" class="file-preview"/>
+                            <input type="file" accept="image/*, .pdf, .txt, .csv" id="file-input" hidden>
+                            <button type="button" class="file-icon material-symbols-rounded">description</button>
+                          <button type="button" id="add-file-btn" class="material-symbols-rounded">attach_file</button>
+                          <button type="button" id="cancel-file-btn" class="material-symbols-rounded">close</button>
+                        </div>
+                        <button type="button" id="stop-response-btn" class="material-symbols-rounded">stop_circle</button>
+                        <button id="send-prompt-btn" class="material-symbols-rounded">arrow_upward</button>
+                    </div>
+                </form>
+
+                <button class="material-symbols-rounded" id="theme-toggle-btn">light_mode</button>
+                <button class="material-symbols-rounded" id="delete-chats-btn">delete</button>
+            </div>
+            <p class="disclaimer-text">Qubix can make mistakes, so double-check it.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
