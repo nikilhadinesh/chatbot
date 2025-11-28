@@ -8,7 +8,7 @@ const themeToggle = document.querySelector("#theme-toggle-btn");
 
 
 // API setup
-const API_KEY="AIzaSyDEhuPaBXzGfo-Nu76cDgUlAYgsxCm6yCk";
+const API_KEY="AIzaSyAFmQE-X9erAtm3GKA8JWWtDJXNNxaMxFY";
 const API_URL=`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?
 key=${API_KEY}`;
 
